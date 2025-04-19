@@ -1,0 +1,135 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background: 	 #e6ecff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  color: #2c3e50; 
+}
+
+.container {
+  background:  #fff5e6; 
+  padding: 30px;
+  border-radius: 12px;
+  width: 500px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+h1 {
+  font-size: 26px;
+  text-align: center;
+  color:  #00001a; 
+}
+
+textarea {
+  width: 90%;
+  height: 100px;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-top: 20px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #ffffff;
+}
+
+textarea:focus {
+  border-color: #e74c3c; 
+  outline: none;
+  box-shadow: 0 0 10px rgba(231, 76, 60, 0.5);
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  transition: background-color 0.3s, transform 0.2s ease-in-out;
+  color: white;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+button:nth-child(1) {
+  background-color: #1abc9c; 
+}
+
+button:nth-child(2) {
+  background-color: #f39c12; 
+}
+
+button:nth-child(3) {
+  background-color: #3498db;
+}
+
+button:nth-child(4) {
+  background-color: #e74c3c; 
+}
+
+h3{
+  margin-top: 35px;
+}
+#displayText {
+  background: #ffffff; 
+  padding: 10px;
+  min-height: 50px;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #34495e; 
+  word-wrap: break-word;
+}
+
+footer {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  color: #7f8c8d;
+  font-size: 14px;
+}
+
+footer p {
+  margin: 0;
+}
+
+
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  textarea {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}

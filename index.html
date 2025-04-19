@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Text Editor with Undo/Redo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Text Editor</h1>
+    <textarea id="inputText" placeholder="Type something..."></textarea>
+    <div class="buttons">
+      <button onclick="typeText()">Add Text</button>
+      <button onclick="undo()">Undo</button>
+      <button onclick="redo()">Redo</button>
+      <button onclick="clearText()">Clear</button>
+    </div>
+    <h3>Current Text:</h3>
+    <div id="displayText"></div>
+  </div>
+  <footer>
+    <p>DSA Project by Shlok Chorge</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
